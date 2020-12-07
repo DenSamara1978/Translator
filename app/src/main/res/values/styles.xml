@@ -1,10 +1,48 @@
+<?xml version="1.0"?>
+
 <resources>
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    <style parent="Theme.MaterialComponents.Light.DarkActionBar" name="AppTheme">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+    </style>
+
+    <style parent="TextAppearance.MaterialComponents.Body1" name="BaseTextStyle">
+        <item name="android:textColor">@color/color_text_main</item>
+        <item name="android:textSize">@dimen/text_size_standard</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style parent="BaseTextStyle" name="HeaderTextStyle">
+        <item name="android:textColor">@color/color_text_header</item>
+        <item name="android:textSize">@dimen/text_size_standard_header</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style parent="BaseTextStyle" name="TextViewButtonStyle">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="BaseEditTextStyle">
+        <item name="android:background">@null</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="android:inputType">text</item>
+    </style>
+
+    <style parent="Widget.MaterialComponents.Button.TextButton" name="BaseFlatButton">
+        <item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <style parent="Theme.MaterialComponents.Light.BottomSheetDialog" name="AppBottomSheetDialogTheme">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style parent="Widget.MaterialComponents.BottomSheet.Modal" name="AppModalStyle">
+        <item name="android:background">@drawable/bottom_sheet_dialog_background</item>
     </style>
 
 </resources>

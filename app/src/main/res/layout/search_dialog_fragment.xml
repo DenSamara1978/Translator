@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+
+<LinearLayout
+    android:layout_marginBottom="@dimen/margin_medium"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:layout_height="205dp"
+    android:layout_width="match_parent"
+    android:id="@+id/bottom_sheet_dialog_layout"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/search_button_textview"
+        android:layout_gravity="end"
+        android:text="@string/button_search"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium"
+        style="@style/TextViewButtonStyle"/>
+
+
+    <FrameLayout
+        android:layout_marginBottom="@dimen/margin_xxx_medium"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginStart="@dimen/margin_medium">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/search_input_layout"
+            android:hint="@string/search_hint">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/search_edit_text"
+                style="@style/BaseEditTextStyle"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/clear_text_imageview"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginTop="@dimen/margin_small"
+            android:contentDescription="@string/delete_description"
+            tools:visibility="visible"
+            android:visibility="visible"
+            android:src="@drawable/ic_delete_text"/>
+
+    </FrameLayout>
+
+</LinearLayout>
